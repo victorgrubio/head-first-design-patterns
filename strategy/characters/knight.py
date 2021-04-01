@@ -8,5 +8,5 @@ class Knight(Character):
         Knight.weapon = Sword()
         Knight.greeting = MedievalGreeting()
 
-    def display():
+    def display(self):
         print("Here should be an KNIGHT drawn but I am too lazy to do it.")

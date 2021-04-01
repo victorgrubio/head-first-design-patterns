@@ -8,5 +8,5 @@ class Archer(Character):
         self.weapon = Bow()
         self.greeting = MedievalGreeting()
 
-    def display():
+    def display(self):
         print("Here should be an ARCHER drawn but I am too lazy to do it.")
