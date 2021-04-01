@@ -1,8 +1,8 @@
 import abc
 
-class Weapon(metaclass=abc.ABCMeta):
+class WeaponBehaviour(metaclass=abc.ABCMeta):
 
     @abc.abstractmethod
-    def use(self):
-        """Use the weapon to cause damage"""
+    def use(self, enemy_character):
+        """Use the weapon to cause damage to another character"""
         raise NotImplementedError
