@@ -1,8 +1,12 @@
-from characters.archer import Archer
-from characters.knight import Knight
 from random import randint
+from argparse import ArgumentParser
+from characters import Archer, Knight
+import config
+
 
 if __name__ == "__main__":
+    parser = ArgumentParser()
+    parser.add_argument('-h', '--help', )
     player1 = Archer()
     player2 = Knight()
     print(f"Player 1 Character:")
