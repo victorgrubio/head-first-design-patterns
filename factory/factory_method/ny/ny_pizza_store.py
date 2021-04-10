@@ -5,8 +5,8 @@ from factory_method.ny import NYStyleCheesePizza, NYStyleVeggiePizza, NYStyleCla
 
 class NYPizzaStore(PizzaStore):
 
-
-    def create_pizza(item: str) -> Pizza:
+    @classmethod
+    def create_pizza(cls, item: str) -> Pizza:
         if item == "cheese":
             return NYStyleCheesePizza()
         if item == "veggie":

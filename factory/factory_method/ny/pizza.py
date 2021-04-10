@@ -5,8 +5,7 @@ class NYStyleCheesePizza(Pizza):
     name = "NY Style Sauce and Cheese Pizza"
     dough = "Thin Crust Dough"
     sauce = "Marinara Sauce"
-
-    toppings.append("Grated Reggiano Cheese")
+    toppings = ["Grated Reggiano Cheese"]
 
 
 class NYStyleVeggiePizza(Pizza):

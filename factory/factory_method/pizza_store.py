@@ -1,15 +1,15 @@
 """Abstract Pizza Store Class"""
-from abc import ABC, abstractmethod
+import abc
 from factory_method.pizza import Pizza
 
 
-class PizzaStore(ABC):
+class PizzaStore(abc.ABC):
     """Abstract class for Pizza Store
     """
-    
-    def order_pizza(pizza_type: str) -> Pizza:
+    @classmethod
+    def order_pizza(cls, pizza_type: str) -> Pizza:
         pizza: Pizza = None
-        pizza = create_pizza(pizza_type)
+        pizza = cls.create_pizza(pizza_type)
         pizza.prepare()
         pizza.bake()
         pizza.cut()
@@ -18,6 +18,6 @@ class PizzaStore(ABC):
         return pizza
 
 
-    @abstractmethod
-    def create_pizza(pizza_type: str) -> Pizza:
+    @abc.abstractclassmethod
+    def create_pizza(cls, pizza_type: str) -> Pizza:
         pass

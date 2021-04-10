@@ -9,7 +9,7 @@ class Pizza(abc.ABC):
     sauce: str
     toppings: List[str] = []
 
-    @abc.abstractclassmethod
+    @classmethod
     def prepare(cls):
         print(f'Preparing {cls.name}')
         print('Tossing dough...')
@@ -18,18 +18,18 @@ class Pizza(abc.ABC):
         for topping in cls.toppings:
             print(f'  {topping}')
 
-    @abc.abstractclassmethod
+    @classmethod
     def bake(cls):
         print('Bake for 25 minutes at 350')
 
-    @abc.abstractclassmethod
+    @classmethod
     def cut(cls):
         print('Cutting the pizza into diagonal slices')
-    
-    @abc.abstractclassmethod
+
+    @classmethod
     def box(cls):
         print('Place pizza in official PizzaStore box')
-    
-    @abc.abstractclassmethod
+
+    @classmethod
     def get_name(cls):
         return cls.name

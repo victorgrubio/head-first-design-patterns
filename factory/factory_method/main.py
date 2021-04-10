@@ -1,6 +1,6 @@
 """Factory method main module"""
 
-
+from factory_method.pizza import Pizza
 from factory_method.pizza_store import PizzaStore
 from factory_method.ny import NYPizzaStore
 
