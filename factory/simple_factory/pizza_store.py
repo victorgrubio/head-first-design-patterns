@@ -1,5 +1,7 @@
-from simple_pizza_factory import SimplePizzaFactory
-from pizza import Pizza
+"""Pizza Store that implements the Simple Factory"""
+from simple_factory.simple_pizza_factory import SimplePizzaFactory
+from simple_factory.pizza import Pizza
+
 
 class PizzaStore(object):
     pizza_factory: SimplePizzaFactory = None

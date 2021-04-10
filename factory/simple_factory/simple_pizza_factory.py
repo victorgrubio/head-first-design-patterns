@@ -1,6 +1,6 @@
 """Simple pizza factory to create pizzas"""
 # The job of this class is to extract the creation process from main.py
-from pizza import Pizza
+from simple_factory.pizza import Pizza, CheesePizza, PepperoniPizza, ClamPizza, VeggiePizza
 
 
 class SimplePizzaFactory(object):
