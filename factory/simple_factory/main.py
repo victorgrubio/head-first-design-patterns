@@ -1,3 +1,4 @@
+"""Main pizza execution script"""
 from pizza import Pizza
 
 def order_pizza(pizza_type: str) -> Pizza:
