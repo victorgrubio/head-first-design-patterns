@@ -1,8 +1,8 @@
 """Factory method main module"""
 
-from factory_method.pizza import Pizza
-from factory_method.pizza_store import PizzaStore
-from factory_method.ny import NYPizzaStore
+from pizza import Pizza
+from pizza_store import PizzaStore
+from ny.pizza_store import NYPizzaStore
 
 
 if __name__ == "__main__":

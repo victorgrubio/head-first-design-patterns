@@ -1,6 +1,6 @@
 """Abstract Pizza Store Class"""
 import abc
-from factory_method.pizza import Pizza
+from pizza import Pizza
 
 
 class PizzaStore(abc.ABC):

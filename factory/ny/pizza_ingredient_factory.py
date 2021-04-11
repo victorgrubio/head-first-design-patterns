@@ -1,7 +1,7 @@
 """NY Ingredient Factory for Pizzas"""
 from typing import List
 from pizza_ingredient_factory import PizzaIngredientFactory
-from ny.ny_ingredients import (
+from ny.ingredients import (
     ThinCrustDough, MarinaraSauce, ReggianoCheese, Garlic, Onion,  Mushroom, RedPepper, SlicedPepperoni, FreshClams
 )
 from ingredients import Veggies
@@ -22,16 +22,16 @@ class NYPizzaIngredientFactory(PizzaIngredientFactory):
         return ReggianoCheese()
     
     @classmethod
-    def create_veggies(cls) -> Veggies:
+    def create_veggies(cls) -> List[Veggies]:
         veggies: List[Veggies] = [
             Garlic(), Onion(), Mushroom(), RedPepper()
         ]
         return veggies
 
     @classmethod
-    def create_pepperoni(cls) -> Pepperoni:
+    def create_pepperoni(cls) -> SlicedPepperoni:
         return SlicedPepperoni()
 
     @classmethod
-    def create_clam(cls) -> Clam:
+    def create_clam(cls) -> FreshClams:
         return FreshClams()

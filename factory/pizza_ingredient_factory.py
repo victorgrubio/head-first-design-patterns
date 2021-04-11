@@ -1,12 +1,13 @@
 """Pizza Ingredient Factory (interface)"""
 import abc
+from typing import List
 from ingredients import Dough, Sauce, Cheese, Veggies, Pepperoni, Clams
 
-class PizzaIngredientFactory(abc.ABCMeta):
+class PizzaIngredientFactory(abc.ABC):
 
 
     @abc.abstractclassmethod
-    def create_dought(cls) -> Dough:
+    def create_dough(cls) -> Dough:
         """Creates a dough for a Pizza
 
         Raises:
@@ -27,7 +28,7 @@ class PizzaIngredientFactory(abc.ABCMeta):
         Returns:
             Sauce: Sauce for pizza
         """
-        pass
+        raise NotImplementedError
 
     @abc.abstractclassmethod
     def create_cheese(cls) -> Cheese:
@@ -42,7 +43,7 @@ class PizzaIngredientFactory(abc.ABCMeta):
         raise NotImplementedError
 
     @abc.abstractclassmethod
-    def create_veggies(cls) -> Veggies:
+    def create_veggies(cls) -> List[Veggies]:
         """Creates a Veggies for a Pizza
 
         Raises:
