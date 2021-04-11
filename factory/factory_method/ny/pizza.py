@@ -1,3 +1,4 @@
+"""Module that contains all NY Pizza Types"""
 from factory_method.pizza import Pizza
 
 
