@@ -40,4 +40,4 @@ class PizzaStore(abc.ABC):
         Returns:
             Pizza: Pizza created
         """
-        pass
+        raise NotImplementedError
